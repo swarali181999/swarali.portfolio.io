@@ -109,6 +109,96 @@
   transform: scale(1.1);
 }
 
+.zoom-effect:hover {
+        transform: scale(1.1);
+    }
+
+
+    /* ======================================
+       EXPERIENCE SECTION
+    ====================================== */
+
+    #experience-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .experience-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        align-items: stretch;
+    }
+
+    .experience-card {
+        background: #1b1b1b;
+        border-radius: 6px;
+        padding: 38px 35px;
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .experience-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    }
+
+    .experience-date {
+        color: #87CEEB;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .experience-card h3 {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 18px;
+        line-height: 1.4;
+    }
+
+    .experience-company {
+        color: #999999;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 991px) {
+        .experience-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .experience-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .experience-card {
+            min-height: 180px;
+            padding: 30px;
+        }
+
+        .experience-date {
+            font-size: 24px;
+        }
+
+        .experience-card h3 {
+            font-size: 21px;
+        }
+    }
 
 </style>
 
@@ -128,6 +218,7 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+			  <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
 	          <!-- <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li> -->
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -218,7 +309,7 @@
 										<p><span class="title-s">Name: </span> <span>Swarali Bavalekar</span></p>
 										<!-- <p><span class="title-s">Job Role: </span> <span>Research Assistant - Machine Learning</span></p> -->
 										<!-- <p><span class="title-s">Experience: </span> <span>2 Years</span></p> -->
-										<p><span class="title-s">Address: </span> <span>Sheffield, United Kingdom</span></p>
+										<p><span class="title-s">Address: </span> <span>United Kingdom</span></p>
 									  </div>
 									</div>
 								  </div>
@@ -274,14 +365,13 @@
 								<!-- <h1 class="big">About</h1> -->
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>Big Data Analytics student at Sheffield Hallam University with over two years of experience as a Data Analyst in IT Services and
-									Healthcare. Proficient in Python, SQL, Power BI, and cloud platforms. Skilled in data transformation, visualization, and machine
-									learning. Adept at collaborating with agile teams to deliver actionable insights. Seeking opportunities to apply analytical skills in a
-									dynamic environment.
+								<p>Data professional with over four years of experience in a data analysis and data Science. Specialize in transforming complex datasets into clear, actionable insights. 
+									Proficient in Python, SQL, Power BI, Excel and Cloud Platforms. Skilled in data transformation, visualization, statistical analysis and machine learning. 
+									Adept at collaborating in agile teams to deliver actionable insights. Seeking opportunities to apply analytical skills in a dynamic environment.
 									</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Experience:</span> <span>2 Years</span></li>
+									<li class="d-flex"><span>Experience:</span> <span>4 Years</span></li>
 									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
 									<li class="d-flex"><span>Education:</span> <span>Master of Science - Big Data Analytics</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
@@ -326,105 +416,173 @@
           </div>
         </div> -->
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2024-Present</span>
-						<h2>RESEARCH ASSISTANT - MACHINE LEARNING</h2>
-						<span class="position">SHEFFIELD HALLAM UNIVERSITY
-						</span>
-						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
-							<ul>
-								<li>Merge datasets and apply preprocessing techniques to build machine learning and deep learning models.</li>
-								<li>Develop models to predict and alert users near overhead power lines, reducing electric shock risks.</li>
-								<li>Test the app for accurate predictions, identify issues, and conduct on-site data collection.</li>
-								<li>Gather data using the app during site visits to meet project requirements.</li>
-							    <li>Write research articles on overhead power lines using Overleaf.</li>
-							    <li>Collaborate with stakeholders to ensure seamless communication and project alignment, providing regular progress
-								updates</li>
-							</ul>
-						</p>
-					</div>
+		<!-- EXPERIENCE SECTION -->
 
-				</div>
+<section class="ftco-section" id="experience-section">
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2023</span>
-						<h2>Data Analyst</h2>
-						<span class="position">UST PRODUCT ENGINEERING</span>
-						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
-							<ul>
-								<li>Analyzed diverse data sources with Power BI and Python to identify trends in energy consumption.</li>
-								<li>Developed and maintained utility billing models tailored to client tariffs for accurate bill generation.</li>
-								<li>Employed advanced Excel functions and Power Query for detailed billing verification.</li>
-								<li>Conducted billing analysis to identify optimal utility plans, leading to significant cost reductions.</li>
-								<li>Analyzed different rate scenarios to ensure clients received the best possible options for their energy needs.</li>
-								<li>Designed Power BI dashboards to visualize utility billing and customer usage patterns.</li>
-								<li>Enhanced SQL queries for efficient data extraction on MySQL and AWS Athena.</li>
-								<li>Maintained and modified Python code for data conversion.</li>
-								<li>Collaborated with cross-functional teams using Agile methodologies to meet business data requirements.</li>
-							</ul>
-						</p>
-					</div>
+    <div class="container experience-container">
 
-				</div>
+        <!-- Section Heading -->
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
 
-		<!-- <div class="row"> -->
-			    <div class="col-md-6">
-				    <div class="resume-wrap ftco-animate">
-						<span class="date">2021-2022</span>
-						<h2>Data Analyst</h2>
-						<span class="position">HEALTHLEDGER DIGNOSTICS</span>
-						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
-							<ul>
-								<li>Optimized data analysis and report generation using advanced Excel functions on a weekly, monthly, and quarterly basis.</li>
-							    <li>Utilized Power BI for data analysis and creating customized employee health reports.</li>
-							    <li>Developed customized data reports and dashboards to aid in strategic decision-making.</li>
-							    <li>Updated monthly data analysis presentations to keep stakeholders informed and support strategy refinement.</li>
-							    <li>Played a key role in agile teams, ensuring effective interaction and project alignment with business objectives.</li>
-							</ul>
-						</p>
-					</div>
+                <h1 class="big big-2">Experience</h1>
 
-				</div>
+                <h2 class="mb-4">Experience</h2>
 
-				<div class="col-md-6">
-				    <div class="resume-wrap ftco-animate">
+                <p>
+                    My professional journey across data analytics,
+                    business intelligence, machine learning and research.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- Experience Cards -->
+        <div class="experience-grid">
+
+
+            <!-- EG ON THE MOVE -->
+            <div class="experience-card ftco-animate">
+
+                <div class="experience-date">
+                    2026 – Present
+                </div>
+
+                <h3>
+                    BI Analyst Developer
+                </h3>
+
+                <div class="experience-company">
+                    EG On The Move
+                </div>
+
+            </div>
+
+
+            <!-- AMBER ENERGY SOLUTIONS -->
+            <div class="experience-card ftco-animate">
+
+                <div class="experience-date">
+                    2025 – 2026
+                </div>
+
+                <h3>
+                    Utility Accounting Analyst
+                </h3>
+
+                <div class="experience-company">
+                    Amber Energy Solutions
+                </div>
+
+            </div>
+
+
+            <!-- CONCENTRIX -->
+            <div class="experience-card ftco-animate">
+
+                <div class="experience-date">
+                    2024 – 2025
+                </div>
+
+                <h3>
+                    Technical Assistant
+                </h3>
+
+                <div class="experience-company">
+                    Concentrix
+                </div>
+
+            </div>
+
+
+            <!-- SHEFFIELD HALLAM UNIVERSITY -->
+            <div class="experience-card ftco-animate">
+
+                <div class="experience-date">
+                    2024
+                </div>
+
+                <h3>
+                    Research Assistant – Machine Learning
+                </h3>
+
+                <div class="experience-company">
+                    Sheffield Hallam University
+                </div>
+
+            </div>
+
+
+            <!-- UST PRODUCT ENGINEERING -->
+            <div class="experience-card ftco-animate">
+
+                <div class="experience-date">
+                    2022 – 2023
+                </div>
+
+                <h3>
+                    Data Analyst
+                </h3>
+
+                <div class="experience-company">
+                    UST Product Engineering
+                </div>
+
+            </div>
+
+
+            <!-- HEALTHLEDGER DIAGNOSTICS -->
+            <div class="experience-card ftco-animate">
+
+                <div class="experience-date">
+                    2021 – 2022
+                </div>
+
+                <h3>
+                    Data Analyst
+                </h3>
+
+                <div class="experience-company">
+                    HealthLedger Diagnostics
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+		<!-- <div class="row"></div>
+			<div class="col-md-6 d-flex">
+				<div class="resume-wrap ftco-animate">
 						<span class="date">2021-2021</span>
 						<h2>Business Analyst Intern</h2>
-						<span class="position">HEXANIKA</span>
-						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
-							<ul>
+						<span class="position">HEXANIKA</span> -->
+						<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							 <ul>
 								<li>Created data modeling on the Home Mortgage (HMDA) dataset</li>
 							    <li>Performed machine learning techniques like Logistic Regression, Decision Tree, and Random Forest to predict action taken
 									predictions.</li>
 							    <li>Extracted meaning from data and create dashboards on Tableau.</li>
 							    <li>Present and communicate data insights/findings to the team to solve complex data problems.</li>
-							</ul>
-						</p>
-					</div>
-
+							</ul> 
+						</p>  -->
+					</div> 
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
+		
 </section>
 			
 
 		<br>
 		<br>
-
 				
 
-		<div class="row">
+		<!-- <div class="row">
 			<h1 class="big-4">Education</h1>
 			<div class="underline"></div>
 		</div>
@@ -436,8 +594,8 @@
     					<span class="date">2023-2024</span>
     					<h2>Master of Science - BIG DATA ANALYTICS</h2>
     					<span class="position">Sheffield Hallam University</span>
-    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
-    				</div>
+    					<p class="mt-4">Grade: First class distinction.</p> -->
+    				<!-- </div>
     			</div>
 
     			<div class="col-md-6">
@@ -445,10 +603,10 @@
     					<span class="date">2019-2021</span>
     					<h2>Master of Science - STATISTICS </h2>
     					<span class="position">MIT World Peace University</span>
-    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
-    				</div>
+    					<p class="mt-4">Grade: First class distinction.</p> -->
+    				<!-- </div>
 				</div>
-    		</div>
+    		</div> -->
 
     		<!-- <div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
@@ -458,6 +616,7 @@
     	</div>
     </section> -->
 
+	<div style="margin-top: -50px;"></div>
 
 
     <section class="ftco-section" id="project-section">
@@ -466,7 +625,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the Data Analytics projects on SQL, Python, Power BI & ML.</p>
+            <p>Below are the Data Analytics projects on SQL, Python, Power BI & Machine Learning.</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -534,8 +693,17 @@
 				</div>
 			  </div>
 			</div>
-		 </div>
-	  </div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/swarali181999/Smart-Energy-Optimization-with-Machine-Learning/blob/main/Project%20code%20.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://docs.google.com/document/d/1PI3-NK8GORKH2P6h0l9pZZ6FqRXkaXHR/edit?usp=sharing&ouid=117785060461331440740&rtpof=true&sd=true">Smart Energy Optimization with Machine Learning</a></h3>
+				  <p> Utilized Python and advanced machine learning models to analyze household energy patterns, forecast consumption, and detect inefficiencies. Designed load-shifting strategies to enhance energy efficiency and reduce costs.</p>
+				</div>
+			</div>
+		</div>
     </section>
 
 	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
@@ -591,6 +759,41 @@
 		</div>
 	</section> -->
 
+	<div class="row">
+		<h1 class="big-4">Education</h1>
+		<div class="underline"></div>
+	</div>
+	<br>
+	
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2023-2024</span>
+					<h2>Master of Science - BIG DATA ANALYTICS</h2>
+					<span class="position">Sheffield Hallam University</span>
+					<p class="mt-4">Grade: First class distinction.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2019-2021</span>
+					<h2>Master of Science - STATISTICS </h2>
+					<span class="position">MIT World Peace University</span>
+					<p class="mt-4">Grade: First class distinction.</p>
+				</div>
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+		<!-- Add space after the education section -->
+<div style="margin-top: 70px;"></div>
+
+
+
+
 	 <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg); margin-bottom: 0; padding-bottom: 0">
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
@@ -623,7 +826,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Sheffield, United Kingdom</p>
+	            <p>United Kingdom</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
